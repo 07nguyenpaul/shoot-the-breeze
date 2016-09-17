@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turingschool-examples/shoot-the-breeze.git"
+    "url": "git+https://github.com/07nguyenpaul/shoot-the-breeze.git"
   },
-  "author": "Turing School",
+  "author": "Turing School - Paul Nguyen & MaryJane Valade",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/turingschool-examples/shoot-the-breeze/issues"
+    "url": "https://github.com/07nguyenpaul/shoot-the-breeze/issues"
   },
-  "homepage": "https://github.com/turingschool-examples/shoot-the-breeze#readme",
+  "homepage": "https://github.com/07nguyenpaul/shoot-the-breeze#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.14.0",
