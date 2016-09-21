@@ -122,6 +122,7 @@ footer {
 
   .logged-in {
     background-color: $color-user-status;
+    display: flex;
     height: 7vh;
     width: 100vw;
     align-items: center;
