@@ -12,4 +12,5 @@ describe('Application', () => {
     assert.equal(wrapper.type(), 'div');
   });
 
+
 });
