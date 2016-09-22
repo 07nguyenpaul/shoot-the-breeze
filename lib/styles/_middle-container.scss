@@ -1,0 +1,68 @@
+.message-container {
+  display: inline-flex;
+  height: 73vh;
+  overflow-y: scroll;
+  @media screen and (min-width: 450px) {
+    width: 60vw;
+
+  }
+
+
+  .button-delete {
+    color: white;
+    background-color: $color-clear;
+    border: none;
+    border-radius: 5px;
+    height: 4vh;
+    width: 75px;
+    font-size: .75em;
+    // margin-left: 15px;
+  }
+}
+
+.message-block {
+  margin-left: 10px;
+  // margin-top: 15px;
+  font-size: 1.25em;
+
+  .message-date {
+    color: $color-date;
+    margin-top: 15px;
+  }
+
+  .message-user {
+    color: $color-user;
+    margin-left: 10px;
+  }
+
+  .message-content {
+    color: $color-main;
+    margin-top: 5px;
+  }
+
+}
+
+
+.user-container {
+  display: none;
+  @media screen and (min-width: 450px) {
+    background-color: $color-input-fields;
+    display: inline-flex;
+    width: 40vw;
+    height: 73vh;
+    font-size: 1.25em;
+  }
+
+  .user-title {
+    color: $color-main;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+
+  .user-name {
+    color: $color-main;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}

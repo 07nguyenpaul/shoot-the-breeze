@@ -1,0 +1,170 @@
+header {
+  background-color: $color-main;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  @media screen and (min-width: 450px) {
+    height: 10vh;
+  }
+
+  .header-title {
+    display: none;
+    @media screen and (min-width: 485px) {
+      display: block;
+      color: white;
+      font-weight: 700;
+      font-size: 1.5em;
+      margin-left: 10px;
+    }
+  }
+
+  .filter-input-field {
+    display: block;
+    color: $color-main;
+    background-color: $color-input-fields;
+    border-radius: 5px;
+    border: none;
+    height: 6vh;
+    width: 90vw;
+    font-family: $main-font;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 15px;
+    @media screen and (min-width: 485) {
+      width: 40vw;
+
+    }
+  }
+
+  .button-container {
+    display: block;
+    padding-right: 15px;
+    width: 90vh;
+    align-items: center;
+    @media screen and (min-width: 485px) {
+      margin-left: auto;
+
+    }
+
+    .button-sort {
+      color: white;
+      background-color: $color-sort-buttons;
+      border: none;
+      border-radius: 5px;
+      height: 6vh;
+      width: 100px;
+      font-size: 1.25em;
+      margin-left: 15px;
+      &:hover {
+        color: $color-sort-buttons;
+        background-color: white;
+
+      }
+    }
+  }
+}
+
+footer {
+  height: 20vh;
+  background-color: $color-main;
+  display: block;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  @media screen and (min-width: 450px) {
+    height: 17vh;
+  }
+
+  .logged-in {
+    display: none;
+    @media screen and (min-width: 450px) {
+      background-color: $color-user-status;
+      display: flex;
+      height: 7vh;
+      width: 100vw;
+      align-items: center;
+    }
+
+    .user-status {
+      color: white;
+      font-weight: 700;
+      font-size: 1.5em;
+      margin-left: 10px;
+    }
+
+    .button-log {
+      color: white;
+      background-color: $color-submit;
+      border: none;
+      border-radius: 5px;
+      height: 6vh;
+      width: 100px;
+      font-size: 1.25em;
+    }
+
+  }
+
+
+  .message-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+
+    .message-input-field {
+      background-color: $color-input-fields;
+      border-radius: 5px;
+      border: none;
+      color: $color-main;
+      display: flex;
+      flex-wrap: wrap;
+      height: 6vh;
+      width: 55vw;
+      font-family: $main-font;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+
+    .char-count {
+      display: none;
+      @media screen and (min-width: 450px) {
+        color: white;
+        font-size: 1.25em;
+      }
+    }
+
+    .button-submit {
+      color: white;
+      background-color: $color-submit;
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      height: 6vh;
+      width: 100px;
+      font-size: 1.25em;
+      &:hover {
+        background-color: white;
+        color: $color-submit;
+      }
+    }
+
+    .button-clear {
+      color: white;
+      background-color: $color-clear;
+      border: none;
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      height: 6vh;
+      width: 100px;
+      font-size: 1.25em;
+      margin-left: 15px;
+      &:hover {
+        color: $color-clear;
+        background-color: white;
+      }
+    }
+  }
+
+}
