@@ -1,0 +1,209 @@
+header {
+  align-items: center;
+  background-color: $color-main;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: center;
+  @media screen and (min-width: 570px) {
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-around;
+  }
+
+  .header-title {
+    display: none;
+    @media screen and (min-width: 570px) {
+      color: white;
+      display: block;
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+  }
+
+  .filter-input-field {
+    background-color: $color-input-fields;
+    border-radius: 5px;
+    border: none;
+    color: $color-main;
+    display: block;
+    font-family: $main-font;
+    font-size: 20px;
+    height: 6vh;
+    padding-left: 10px;
+    width: 90vw;
+    @media screen and (min-width: 570px) {
+      margin-left: 15px;
+      width: 40vw;
+    }
+    @media screen and (min-width: 670px) {
+      width: 70vw;
+    }
+  }
+
+  .button-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    padding-right: 15px;
+    width: 90vw;
+    @media screen and (min-width: 570px) {
+      margin-left: auto;
+      margin-top: 0;
+      width: 35vw;
+    }
+
+    .button-sort {
+      background-color: $color-sort-buttons;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-size: 1.25em;
+      height: 6vh;
+      margin-left: 15px;
+      width: 100px;
+      &:hover {
+        background-color: white;
+        color: $color-sort-buttons;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $color-main;
+  bottom: 0;
+  display: block;
+  height: 20vh;
+  position: fixed;
+  width: 100vw;
+  @media screen and (min-width: 450px) {
+    height: 17vh;
+  }
+
+  .logged-in {
+    display: none;
+    @media screen and (min-width: 450px) {
+      align-items: center;
+      background-color: $color-user-status;
+      display: flex;
+      height: 7vh;
+      width: 100vw;
+    }
+
+    .user-status {
+      color: white;
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+
+    .button-log {
+      background-color: $color-submit;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-size: 1.25em;
+      height: 6vh;
+      width: 100px;
+    }
+  }
+
+  .message-input {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+    padding: 10px;
+    @media screen and (min-width: 450px) {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 10vh;
+      padding: 0;
+    }
+
+    .message-input-field {
+      background-color: $color-input-fields;
+      border-radius: 5px;
+      border: none;
+      color: $color-main;
+      display: flex;
+      font-family: $main-font;
+      font-size: 20px;
+      height: 6vh;
+      padding-left: 10px;
+      width: 90vw;
+      @media screen and (min-width: 450px) {
+        margin-left: 10px;
+        width: 55vw;
+      }
+    }
+
+    .char-count {
+      display: none;
+      @media screen and (min-width: 570px) {
+        color: white;
+        display: flex;
+        font-size: 1.25em;
+      }
+    }
+
+    .button-container {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: .75em;
+      text-align: center;
+      width: 90vw;
+      @media screen and (min-width: 485px) {
+        margin-top: 0;
+        padding-right: 15px;
+        width: 20vw;
+      }
+
+
+
+      .button-submit {
+        background-color: $color-submit;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        display: flex;
+        font-size: 1.25em;
+        height: 6vh;
+        padding-left: 17px;
+        text-align: center;
+        width: 100px;
+        &:hover {
+          color: $color-submit;
+          background-color: white;
+        }
+      }
+
+      .button-clear {
+        align-content: center;
+        background-color: $color-clear;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        display: flex;
+        font-size: 1.25em;
+        height: 6vh;
+        margin-left: 15px;
+        padding-left: 17px;
+        text-align: center;
+        width: 100px;
+        &:hover {
+          background-color: white;
+          color: $color-clear;
+        }
+      }
+  }
+  }
+
+}

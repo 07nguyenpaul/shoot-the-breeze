@@ -14,16 +14,12 @@ describe('MessageInput component', () => {
     assert.equal(wrapper.type(), 'div');
   });
 
-  it('should render an input field for a message', () => {
-    assert.lengthOf(wrapper.find('input'), 1);
+  it('should render an input field for a message and two buttons', () => {
+    assert.lengthOf(wrapper.find('input'), 3);
   });
 
   it('should have an article for a Character Count', () => {
     assert.lengthOf(wrapper.find('article'), 1);
-  });
-
-  it('should render two Button components on the page', function() {
-    assert.lengthOf(wrapper.find('Button'), 2);
   });
 
   it('should set the state of the draft message', () => {
