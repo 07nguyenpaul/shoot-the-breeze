@@ -1,76 +1,83 @@
 header {
+  align-items: center;
   background-color: $color-main;
   display: flex;
+  flex-direction: column;
   height: 20vh;
-  align-items: center;
+  justify-content: center;
   @media screen and (min-width: 450px) {
+    flex-direction: row;
     height: 10vh;
+    justify-content: space-around;
   }
 
   .header-title {
     display: none;
     @media screen and (min-width: 485px) {
-      display: block;
       color: white;
-      font-weight: 700;
+      display: block;
       font-size: 1.5em;
+      font-weight: 700;
       margin-left: 10px;
     }
   }
 
   .filter-input-field {
-    display: block;
-    color: $color-main;
     background-color: $color-input-fields;
     border-radius: 5px;
     border: none;
-    height: 6vh;
-    width: 90vw;
+    color: $color-main;
+    display: block;
     font-family: $main-font;
     font-size: 20px;
+    height: 6vh;
     padding-left: 10px;
-    margin-left: 15px;
-    @media screen and (min-width: 485) {
+    width: 90vw;
+    @media screen and (min-width: 485px) {
+      margin-left: 15px;
       width: 40vw;
 
     }
   }
 
   .button-container {
-    display: block;
-    padding-right: 15px;
-    width: 90vh;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    padding-right: 15px;
+    width: 90vw;
     @media screen and (min-width: 485px) {
       margin-left: auto;
-
+      margin-top: 0;
+      width: 25vw;
     }
 
     .button-sort {
-      color: white;
       background-color: $color-sort-buttons;
-      border: none;
       border-radius: 5px;
-      height: 6vh;
-      width: 100px;
+      border: none;
+      color: white;
       font-size: 1.25em;
+      height: 6vh;
       margin-left: 15px;
+      width: 100px;
       &:hover {
-        color: $color-sort-buttons;
         background-color: white;
-
+        color: $color-sort-buttons;
       }
     }
   }
 }
 
 footer {
-  height: 20vh;
   background-color: $color-main;
-  display: block;
-  width: 100vw;
-  position: fixed;
   bottom: 0;
+  display: block;
+  height: 20vh;
+  position: fixed;
+  width: 100vw;
   @media screen and (min-width: 450px) {
     height: 17vh;
   }
@@ -78,38 +85,45 @@ footer {
   .logged-in {
     display: none;
     @media screen and (min-width: 450px) {
+      align-items: center;
       background-color: $color-user-status;
       display: flex;
       height: 7vh;
       width: 100vw;
-      align-items: center;
     }
 
     .user-status {
       color: white;
-      font-weight: 700;
       font-size: 1.5em;
+      font-weight: 700;
       margin-left: 10px;
     }
 
     .button-log {
-      color: white;
       background-color: $color-submit;
-      border: none;
       border-radius: 5px;
+      border: none;
+      color: white;
+      font-size: 1.25em;
       height: 6vh;
       width: 100px;
-      font-size: 1.25em;
     }
 
   }
 
-
   .message-input {
-    display: flex;
     align-items: center;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
     padding: 10px;
+    @media screen and (min-width: 450px) {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 10vh;
+      padding: 0;
+    }
 
     .message-input-field {
       background-color: $color-input-fields;
@@ -117,54 +131,77 @@ footer {
       border: none;
       color: $color-main;
       display: flex;
-      flex-wrap: wrap;
-      height: 6vh;
-      width: 55vw;
       font-family: $main-font;
       font-size: 20px;
+      height: 6vh;
       padding-left: 10px;
+      width: 90vw;
+      @media screen and (min-width: 450px) {
+        margin-left: 10px;
+        width: 55vw;
+
+      }
     }
 
     .char-count {
       display: none;
       @media screen and (min-width: 450px) {
         color: white;
+        display: flex;
         font-size: 1.25em;
       }
     }
 
-    .button-submit {
-      color: white;
-      background-color: $color-submit;
-      border: none;
-      border-radius: 5px;
+    .button-container {
+      align-items: center;
       display: flex;
-      flex-wrap: wrap;
-      height: 6vh;
-      width: 100px;
-      font-size: 1.25em;
-      &:hover {
-        background-color: white;
-        color: $color-submit;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: .75em;
+      width: 90vw;
+      @media screen and (min-width: 485px) {
+        margin-top: 0;
+        padding-right: 15px;
+        text-align: center;
+        width: 20vw;
       }
-    }
 
-    .button-clear {
-      color: white;
-      background-color: $color-clear;
-      border: none;
-      border-radius: 5px;
-      display: flex;
-      flex-wrap: wrap;
-      height: 6vh;
-      width: 100px;
-      font-size: 1.25em;
-      margin-left: 15px;
-      &:hover {
-        color: $color-clear;
-        background-color: white;
+      .button-submit {
+        background-color: $color-submit;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.25em;
+        height: 6vh;
+        text-align: center;
+        width: 100px;
+        &:hover {
+          color: $color-submit;
+          background-color: white;
+        }
       }
-    }
+
+      .button-clear {
+        align-content: center;
+        background-color: $color-clear;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.25em;
+        height: 6vh;
+        margin-left: 15px;
+        text-align: center;
+        width: 100px;
+        &:hover {
+          background-color: white;
+          color: $color-clear;
+        }
+      }
+  }
   }
 
 }
