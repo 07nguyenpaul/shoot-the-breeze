@@ -15,13 +15,13 @@ describe('Header component', function() {
   it('should render a title as a <h1>', function() {
     assert.lengthOf(wrapper.find('h1'), 1);
   });
+
   it('should render an <input> field for search', function() {
     assert.lengthOf(wrapper.find('input'), 1);
   });
+
   it('should render two Button components on the page', function() {
     assert.lengthOf(wrapper.find('Button'), 2);
   });
 
-  // add mount test
-  
 });
