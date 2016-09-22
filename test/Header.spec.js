@@ -5,7 +5,7 @@ import { assert } from 'chai';
 import Header from '../lib/components/Header';
 import Button from '../lib/components/Button';
 
-describe('Header Test', function() {
+describe('Header component', function() {
   const wrapper = shallow(<Header />)
 
   it('should render as a <header>', function() {
@@ -21,7 +21,7 @@ describe('Header Test', function() {
   it('should render two Button components on the page', function() {
     assert.lengthOf(wrapper.find('Button'), 2);
   });
-  it('should render as a <header>', function() {
-    assert.equal(wrapper.type(), 'header');
-  });
+
+  // add mount test
+  
 });
