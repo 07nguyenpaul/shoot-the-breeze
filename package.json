@@ -40,6 +40,7 @@
     "firebase": "^3.4.0",
     "firebase-tools": "^3.0.7",
     "jsdom": "^9.5.0",
+    "locus": "^1.2.0",
     "lodash": "^4.15.0",
     "mocha": "^3.0.2",
     "mocha-loader": "^1.0.0",
